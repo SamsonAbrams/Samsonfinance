@@ -9,12 +9,13 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-    domains: ['localhost'],
+    domains: ['localhost', 'samsonfinance.pages.dev'],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  assetPrefix: './',
+  trailingSlash: true,
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://samsonfinance.pages.dev' : '',
   basePath: '',
 };
 
