@@ -12,8 +12,6 @@ const nextConfig = {
     domains: ['localhost', 'samsonfinance.pages.dev'],
   },
   trailingSlash: true,
-  basePath: '',
-  assetPrefix: './',
   reactStrictMode: true,
   swcMinify: true,
 };
